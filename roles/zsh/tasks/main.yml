@@ -1,0 +1,34 @@
+---
+
+# zsh
+- name: install zsh
+  become: yes
+  apt:
+    name:
+      - zsh
+    state: latest
+
+- name: setup zsh as default shell
+  become: yes
+  user: 
+    name: root
+    shell: /bin/zsh
+  user: 
+    name: "{{ ansible_user_id }}"
+    shell: /bin/zsh
+
+# git
+- name: add git ppa
+  apt_repository:
+    repo: 'ppa:git-core/ppa'
+    state: present
+
+- name: install git
+  become: yes
+  apt:
+    name:
+      - git
+    state: latest
+
+# oh-my-zsh
+# TODO: finish this
