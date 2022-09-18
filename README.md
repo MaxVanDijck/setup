@@ -1,4 +1,5 @@
 ## Ubuntu Dev Setup
 ```
-Make
+# automates zsh, git and oh-my-zsh install
+make zsh
 ```
