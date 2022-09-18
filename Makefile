@@ -9,4 +9,5 @@ ubuntu-update:
 
 zsh:
 	@echo "### Replace Bash with ZSH! ###"
-	sudo ansible-playbook -i localhost -K main.yml
+	ansible-playbook -i localhost -K main.yml
+	@echo "### Restart terminal for your shiny new ZSH ###"

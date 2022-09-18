@@ -31,4 +31,5 @@
     state: latest
 
 # oh-my-zsh
-# TODO: finish this
+- name: install oh-my-zsh
+  shell: sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" "" --unattended
