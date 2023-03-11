@@ -10,4 +10,4 @@ ubuntu-update:
 zsh:
 	@echo "### Replace Bash with ZSH! ###"
 	ansible-playbook -i localhost -K main.yml
-	@echo "### Restart terminal and type 'zsh' for your shiny new ZSH ###"
+	@echo "### Restart terminal and type 'zsh' to setup your shiny new ZSH ###"
