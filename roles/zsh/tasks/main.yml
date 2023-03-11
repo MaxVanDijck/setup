@@ -17,19 +17,6 @@
     name: "{{ ansible_user_id }}"
     shell: /bin/zsh
 
-# git
-- name: add git ppa
-  apt_repository:
-    repo: 'ppa:git-core/ppa'
-    state: present
-
-- name: install git
-  become: yes
-  apt:
-    name:
-      - git
-    state: latest
-
 # oh-my-zsh
 - name: install oh-my-zsh
   shell: sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" "" --unattended
