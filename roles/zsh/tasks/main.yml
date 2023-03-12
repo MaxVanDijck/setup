@@ -19,5 +19,7 @@
 
 # oh-my-zsh
 - name: install oh-my-zsh
-  shell: sh -c "$(wget https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh -O -)" "" --unattended
+  shell: 
+    - sh -c "$(wget https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh -O -)" "" --unattended
+    - chsh -s $(which zsh)
   
